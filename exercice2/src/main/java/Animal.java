@@ -3,4 +3,5 @@ public abstract class Animal {
         System.out.println("Un animal a été fabriqué");
     }
 
+
 }

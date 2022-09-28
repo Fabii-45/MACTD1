@@ -2,7 +2,9 @@ public class Chat extends Animal{
 
     private String nom;
 
-    public Chat() {}
+    public Chat(String nom) {
+        this.nom=nom;
+    }
 
     public String getNom() {
         return nom;
@@ -14,7 +16,7 @@ public class Chat extends Animal{
     }
 
     @Override
-    protected Object clone() throws CloneNotSupportedException {
-        return super.clone();
+    public Chat clone() {
+        return new Chat(getNom());
     }
 }

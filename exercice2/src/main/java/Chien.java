@@ -2,7 +2,9 @@ public class Chien extends Animal{
 
     String nom;
 
-    public Chien() {}
+    public Chien(String nom) {
+        this.nom=nom;
+    }
 
     public String getNom() {
         return nom;
@@ -14,7 +16,7 @@ public class Chien extends Animal{
     }
 
     @Override
-    protected Object clone() throws CloneNotSupportedException {
-        return super.clone();
+    public Chien clone() {
+        return new Chien(getNom());
     }
 }

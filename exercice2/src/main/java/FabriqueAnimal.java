@@ -1,3 +1,4 @@
+@FunctionalInterface
 public interface FabriqueAnimal {
-    Object creerAnimal(String animal) throws CloneNotSupportedException;
+    public Animal creerAnimal(String animal) throws Exception;
 }
