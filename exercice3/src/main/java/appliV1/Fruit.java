@@ -1,4 +1,4 @@
-package AppliV1;
+package appliV1;
 
 public class Fruit {
     private String type;

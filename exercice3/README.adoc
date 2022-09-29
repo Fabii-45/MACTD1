@@ -1,7 +1,7 @@
 :imagesdir: src/main/resources/images
 [[OLE_LINK2]][[OLE_LINK1]]__Mangez des fruits !__
 
-[[ole_link2]][[ole_link1]]On dispose de la classe AppliV1.Hobbit contenant la méthode
+[[ole_link2]][[ole_link1]]On dispose de la classe appliV1.Hobbit contenant la méthode
 __manger(Fruit f)__.
 
 Dans le cadre d’une application permettant à des Hobbits de manger des
@@ -15,11 +15,11 @@ image:Hobbit.png[width=173,height=113]
         public ArbreFruitier(String type) {
             this.type = type;
         }
-        public AppliV1.Fruit cueille() {
+        public appliV1.modele.Fruit cueille() {
             if (this.type.equals("pommier") {
-                return new AppliV1.Fruit("pomme");
+                return new appliV1.modele.Fruit("pomme");
             else if (this.type.equals("poirier") {
-                return new AppliV1.Fruit("poire");
+                return new appliV1.modele.Fruit("poire");
             }
         }
         public String toString() {
@@ -27,9 +27,9 @@ image:Hobbit.png[width=173,height=113]
         }
     }
 
-    public class AppliV1.Fruit {
+    public class appliV1.modele.Fruit {
         private String type;
-        public AppliV1.Fruit(String type) {
+        public appliV1.modele.Fruit(String type) {
             this.type = type;
         }
         public String toString() {
@@ -41,7 +41,7 @@ image:Hobbit.png[width=173,height=113]
         public static void main(String[] args) {
             ArbreFruitier pommier = new ArbreFruitier("pommier");
             ArbreFruitier poirier = new ArbreFruitier("poirier");
-            AppliV1.Hobbit maraudeur = new AppliV1.Hobbit("Merry");
+            appliV1.Hobbit maraudeur = new appliV1.Hobbit("Merry");
             maraudeur.mange(pommier.cueille());
             maraudeur.mange(poirier.cueille());
         }
