@@ -11,7 +11,7 @@ public class Hobbit {
     }
 
 
-    public String mange(Fruit cueille) {
-        return this.nom+ " mange "+cueille.toString();
+    public void mange(Fruit cueille) {
+        System.out.println(this.nom+ " mange "+cueille.toString());
     }
 }

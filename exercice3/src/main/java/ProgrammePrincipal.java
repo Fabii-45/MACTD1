@@ -1,4 +1,4 @@
-import appliV1.Hobbit;
+import modele.Hobbit;
 import fabriques.*;
 import modele.AbstractArbreFruitier;
 import modele.Fruit;
